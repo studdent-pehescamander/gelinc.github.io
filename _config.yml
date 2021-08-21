@@ -19,16 +19,16 @@ authors:
     display_name: Juliana Porto
     avatar: 'assets/images/avatar-juliana.png'
     email: julianaporto169@gmail.com
-    web: http://lattes.cnpq.br/6272654670954803
-    twitter: https://www.linkedin.com/in/juliana-porto-7070a6198/
+    lattes: http://lattes.cnpq.br/6272654670954803
+    linkedin: https://www.linkedin.com/in/juliana-porto-7070a6198/
     description: "Estudante de Letras Português da Universidade de Brasília. Pesquisa e atua profissionalmente na área de Linguística Computacional, ou processamento de linguagem natural, na Alana AI. É entusiasta a respeito dos conhecimentos de Linguística de Corpus e áreas relacionadas à inteligência artificial."
   john:
     name: John
     display_name: John    
     avatar: 'assets/images/avatar.png'
     email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
+    lattes: https://www.wowthemes.net
+    linkedin: https://twitter.com/wowthemesnet
     description: "Write a short description of the author here. You are currently previewing Memoirs demo, a Jekyll template compatible with Github pages."
 
 # Plugins
