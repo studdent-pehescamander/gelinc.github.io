@@ -730,3 +730,19 @@ body.active-side {
         }
     }
 }
+
+.menu2 li  ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#fff;
+display:none;
+}
+
+.menu2 li ul li{
+border:1px solid #c0c0c0;
+display:block;
+width:150px;
+}
+
+.menu2 li:hover ul, .menu li.over ul{display:block;}
