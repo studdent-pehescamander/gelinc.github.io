@@ -5,7 +5,7 @@ permalink: /contact
 comments: false
 ---
 
-<form action="https://formspree.io/{{site.email}}" method="POST">    
+<form action="https://formspree.io/f/xwkawaqp" method="POST">    
 <p class="mb-4">Por favor, envie sua mensagem para {{site.name}}. Nós responderemos o mais breve possível!</p>
 <div class="form-group row">
 <div class="col-md-6">
@@ -16,5 +16,5 @@ comments: false
 </div>
 </div>
 <textarea rows="8" class="form-control mb-3" name="message" placeholder="Mensagem*" required></textarea>    
-<input class="btn btn-dark" type="submit" value="Send">
+<input class="btn btn-dark" type="submit" value="Enviar">
 </form>
