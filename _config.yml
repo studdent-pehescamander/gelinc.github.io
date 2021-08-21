@@ -22,14 +22,14 @@ authors:
     lattes: http://lattes.cnpq.br/6272654670954803
     linkedin: https://www.linkedin.com/in/juliana-porto-7070a6198/
     description: "Estudante de Letras Português da Universidade de Brasília. Pesquisa e atua profissionalmente na área de Linguística Computacional, ou processamento de linguagem natural, na Alana AI. É entusiasta a respeito dos conhecimentos de Linguística de Corpus e áreas relacionadas à inteligência artificial."
-  john:
-    name: John
-    display_name: John    
-    avatar: 'assets/images/avatar.png'
-    email: wowthemesnet@gmail.com
-    lattes: https://www.wowthemes.net
-    linkedin: https://twitter.com/wowthemesnet
-    description: "Write a short description of the author here. You are currently previewing Memoirs demo, a Jekyll template compatible with Github pages."
+  Pedro:
+    name: Pedro
+    display_name: Pedro Henrique B. Silvério    
+    avatar: 'assets/images/avatar-pedro.png'
+    email: psilverio27@gmail.com
+    lattes: http://lattes.cnpq.br/6272654670954803
+    linkedin: https://www.linkedin.com/in/pedrohenriquebarrossilverio
+    description: "Estudante de Línguas Estrangeiras Aplicadas ao Línguas Estrangeiras Aplicadas ao Multilinguismo e à Sociedade da Informação da Universidade de Brasília. Pesquisador na área de Linguística Computacional, ou processamento de linguagem natural, na Universidade de Brasília. Desenvolvedor do Blog e entusiasta em áreas relacionadas à Tecnologia, Multilinguismo no Ciberespaço e Linguistica Computacional."
 
 # Plugins
 plugins:
