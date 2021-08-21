@@ -7,7 +7,7 @@ favicon: 'assets/images/logo.png'
 baseurl: ''
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'gelinc'
-mailchimp-list: 'https://chimpstatic.com/mcjs-connected/js/users/2219e9e3f830fe06a3572e5ab/fdede3bbf121b163902d1823a.js'
+mailchimp-list: 'https://mailchi.mp/697c1176419e/gelinc'
 include: ["_pages"]
 permalink: /:title/
 email: gelincunb@gmail.com
