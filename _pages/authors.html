@@ -4,6 +4,7 @@ title: Membros
 permalink: /authors
 comments: false
 ---
+<link rel="stylesheet" href="/path/to/folder/css/academicons.min.css"/>
 <div class="list-authors mt-5">
 {% for author in site.authors %}   
     <div id="{{ author[1].name }}" class="authorbox position-relative pb-5 pt-5 mb-4 mt-4 border">   
@@ -18,7 +19,7 @@ comments: false
                 <p class="mt-4 mb-0 small text-center">
 
                     {% if author[1].web %}
-                        <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].web }}"><i class="fa fa-link"></i></a> 
+                        <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].web }}"><i class="lattes"></i></a> 
                     {% endif %}
 
                     {% if author[1].twitter %}
