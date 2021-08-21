@@ -54,12 +54,13 @@
         <li><a href="{{ site.baseurl }}/about">Sobre nós</a></li>
         <li><a href="{{ site.baseurl }}/authors">Membros <span class="badge badge-primary">new</span></a></li>
 	<li><a href="{{ site.baseurl }}/categories#Notícias">Notícias <span class="badge badge-primary">new</span></a></li>
-		<li><a href="{{ site.baseurl }}/categories">Categorias<span class="badge badge-primary">new</span></a>
-			<ul>
-				<li><a href="{{ site.baseurl }}/">Categorias 1 <span class="badge badge-primary">new</span></a></li>
-				<li><a href="{{ site.baseurl }}/">Categorias 2 <span class="badge badge-primary">new</span></a></li>
-			</ul>
-		</li>
+	    <div class="dropdown">
+		    <button class="mainmenubtn">Categorias</button>
+		    <div class="dropdown-child">
+			<li><a href="{{ site.baseurl }}/">Categoria 1 <span class="badge badge-primary">new</span></a></li>
+			<li><a href="{{ site.baseurl }}/">Categoria 2 <span class="badge badge-primary">new</span></a></li>
+		    </div>
+	    </div>
         <li><a href="{{ site.baseurl }}/contact">Contato</a></li>       
     </ul>   
 </nav>
