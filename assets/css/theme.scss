@@ -226,10 +226,6 @@ img, img:hover {
     }
 }
 
-.sub-item, .header-menu, .header-submenu {
-	border-bottom-color: #8E9AA7;
-}
-
 .sub-item, .header-menu, .header-submenu ul {
 	margin: 0;
 	padding: 0;
@@ -240,7 +236,6 @@ img, img:hover {
 .sub-item, .header-menu, .header-submenu ul li{
     position: relative;
     padding-left: 10px;
-    width: 100%;
     border-bottom: 1px solid #8E9AA7;
     border-left: 1px solid;
     height: 50px;
@@ -257,7 +252,7 @@ img, img:hover {
 .sub-item, .header-menu, .header-submenu ul li a {
    display: block;
    text-decoration: none;
-   color: #E2144A;
+   color: #8E9AA7;
    background: #fff;
    padding: 5px;
    border: 1px solid #ccc;
