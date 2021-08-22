@@ -226,6 +226,22 @@ img, img:hover {
     }
 }
 
+ul li a {
+   display: block;
+   text-decoration: none;
+   color: #E2144A;
+   background: #fff;
+   padding: 5px;
+   border: 1px solid #ccc;
+}
+
+li ul {
+position: absolute;
+left: 149px;
+top: 0;
+display: none;
+}
+
 // blog grid
 .blog-grid-container {
     width: auto;
