@@ -9,9 +9,6 @@
 {% else %}<meta name="instagram:card" content="summary">{% endif %}
 <meta name="instagram:site" content="@{% if site.instagram %}{{ site.instagram }}{% else %}{{ site.owner.instagram }}{% endif %}">
 <meta name="instagram:creator" content="@{% if site.owner.instagram %}{{ site.owner.instagram }}{% else %}{{ site.instagram }}{% endif %}">{% endif %}
-	
-{% capture site_cats %}{% for cat in site.categories %}{{ cat | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign cats_list = site_cats | split:',' | sort %}
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
@@ -65,15 +62,22 @@
         <li><a href="{{ site.baseurl }}/about">Sobre nós</a></li>
         <li><a href="{{ site.baseurl }}/authors">Membros <span class="badge badge-primary"></span></a></li>
 	<li><a href="{{ site.baseurl }}/tags#Notícias">Notícias <span class="badge badge-primary"></span></a></li>
-	{% if menu.type == 'categories' %}
-	    <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
-		    <ul class="header-submenu">
-			    {% for item in (0..site.categories.size) %}{% unless forloop.last %}
-			    {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
-			    <li class="sub-item"><a href="{{site.url}}/categories/#{{this_word}}">{{this_word}}</a></li>
-			    {% endunless %}{% endfor %}
-		    </ul>
-		    {% elsif menu.submenu %}
+      {% for menu in site.menu reversed %}
+        {% assign class = nil %}
+        {% if ((page.url contains menu.url and menu.url != '/') or (page.url == '/index.html' and menu.url == '/')) %}
+          {% assign class = 'active' %}
+        {% endif %}
+
+        {% if menu.type == 'categories' %}
+          <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
+            <ul class="header-submenu">
+              {% for item in (0..site.categories.size) %}{% unless forloop.last %}
+                {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
+                  <li class="sub-item"><a href="{{site.url}}/categories/#{{this_word}}">{{this_word}}</a></li>
+              {% endunless %}{% endfor %}
+            </ul>
+          </li>
+        {% elsif menu.submenu %}
           <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
             <ul class="header-submenu">
               {% for sub in menu.submenu %}
@@ -89,7 +93,6 @@
             {% endif %}
         {% endif %}
       {% endfor %}
-	    </li>
         <li><a href="{{ site.baseurl }}/contact">Contato</a></li>       
     </ul>   
 </nav>
