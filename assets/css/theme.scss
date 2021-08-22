@@ -737,13 +737,9 @@ body.active-side {
 	position: fixed;
 	margin-top: 15px;
 	margin-right: 10px;
-	top: 0;
-	right: 0;
-	z-index: 10000000000;
-	top: auto;
 }
 
-.button-twitter a:hover {
+.button-twitter a {
 	text-decoration: none;
 	background-color: #833AB4;
 }
