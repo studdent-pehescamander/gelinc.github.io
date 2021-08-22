@@ -57,12 +57,12 @@
 </div>
 <div id="blackover-nav" class="blackover"></div>
 <nav id="menu">
-    <ul>
+    <ul class="menu-principal">
         <h3>Navegação</h3>
-        <li class="header"><a href="{{ site.baseurl }}/">Home</a></li>
-        <li class="header"><a href="{{ site.baseurl }}/about">Sobre nós</a></li>
-        <li class="header"><a href="{{ site.baseurl }}/authors">Membros </a></li>
-	<li class="header"><a href="{{ site.baseurl }}/tags#Notícias">Notícias </a></li>
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/about">Sobre nós</a></li>
+        <li><a href="{{ site.baseurl }}/authors">Membros </a></li>
+	<li><a href="{{ site.baseurl }}/tags#Notícias">Notícias </a></li>
         <li class="header-item"><a href="{{ site.baseurl }}/categories">Categorias</a>
             <ul class="header-submenu">
               {% for item in (0..site.categories.size) %}{% unless forloop.last %}
