@@ -65,7 +65,7 @@
 	   <ul>
     {% for menu in site.menu %}
       {% if menu.type == 'categories' %}
-        <li><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
+        <li><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</h3></a>
           <ul>
             {% for item in (0..site.categories.size) %}{% unless forloop.last %}
               {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
@@ -74,15 +74,15 @@
           </ul>
         </li>
       {% elsif menu.submenu %}
-        <li><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</h3></a>
+        <li><a href="{{site.url}}{{menu.url}}">{{ menu.title }}submenu</a>
           <ul>
             {% for sub in menu.submenu %}
-              <li><a href="{{site.url}}{{sub.url}}">{{sub.title}}</a></li>
+              <li><a href="{{site.url}}{{sub.url}}">{{sub.title}}submenu</a></li>
             {% endfor %}
           </ul>
         </li>
       {% else %}
-        <li><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</h3></a></li>
+        <li><a href="{{site.url}}{{menu.url}}">{{ menu.title }}menu</a></li>
       {% endif %}
     {% endfor %}
   </ul>
