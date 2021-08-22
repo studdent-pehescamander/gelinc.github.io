@@ -63,7 +63,6 @@
         <li><a href="{{ site.baseurl }}/about">Sobre nós</a></li>
         <li><a href="{{ site.baseurl }}/authors">Membros </a></li>
 	<li><a href="{{ site.baseurl }}/tags#Notícias">Notícias </a></li>
-        {% if menu.type == 'categories' %}
           <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</a>
             <ul class="header-submenu">
               {% for item in (0..site.categories.size) %}{% unless forloop.last %}
