@@ -63,31 +63,30 @@
         <li><a href="{{ site.baseurl }}/about">Sobre nós</a></li>
         <li><a href="{{ site.baseurl }}/authors">Membros </a></li>
 	<li><a href="{{ site.baseurl }}/tags#Notícias">Notícias </a></li>
-  <ul>
-    {% for menu in site.menu %}
-      {% if menu.type == 'categories' %}
-        <li><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</a>
-          <ul>
-            {% for item in (0..site.categories.size) %}{% unless forloop.last %}
-              {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
-                <li><a href="{{site.url}}/categories#{{this_word}}">{{this_word}}</a></li>
-            {% endunless %}{% endfor %}
-          </ul>
-        </li>
-      {% elsif menu.submenu %}
-        <li><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</a>
-          <ul>
-            {% for sub in menu.submenu %}
-              <li><a href="{{site.url}}{{sub.url}}">{{sub.title}}</a></li>
-            {% endfor %}
-          </ul>
-        </li>
-      {% else %}
-        <li><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</nav>
+	    {% if menu.type == 'categories' %}
+          <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
+            <ul class="header-submenu">
+              {% for item in (0..site.categories.size) %}{% unless forloop.last %}
+                {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
+                  <li class="sub-item"><a href="{{site.url}}/categories/#{{this_word}}">{{this_word}}</a></li>
+              {% endunless %}{% endfor %}
+            </ul>
+          </li>
+        {% elsif menu.submenu %}
+          <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
+            <ul class="header-submenu">
+              {% for sub in menu.submenu %}
+                <li class="sub-item"><a href="{{site.url}}{{sub.url}}">{{sub.title}}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+            {% if menu.url contains 'http://' or menu.url contains 'https://' %}
+                <li class="header-item {{class}}"><a href="{{menu.url}}" target="_blank"><h3>{{ menu.title }}</h3></a></li>
+            {% else %}
+                <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a></li>
+            {% endif %}
+        {% endif %}
         <li><a href="{{ site.baseurl }}/contact">Contato</a></li>       
     </ul>   
 </nav>
