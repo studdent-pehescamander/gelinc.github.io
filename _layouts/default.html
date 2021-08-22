@@ -71,7 +71,7 @@
             {% for item in (0..site.categories.size) %}{% unless forloop.last %}
               {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
                 <li><a href="{{site.url}}/categories#{{this_word}}">{{this_word}}</a></li>
-            {% endunless %}{% endfor %}
+            {% endunless %}{% endfor %}{% endif %}
           </ul>
         </li>
         <li><a href="{{ site.baseurl }}/contact">Contato</a></li>       
