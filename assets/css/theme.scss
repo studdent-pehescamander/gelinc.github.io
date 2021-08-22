@@ -226,18 +226,18 @@ img, img:hover {
     }
 }
 
-.header-item.active, .header-item:hover {
+.sub-item, .header-menu, .header-submenu {
 	border-bottom-color: #8E9AA7;
 }
 
-.header-menu, .sub-item ul {
+.sub-item, .header-menu, .header-submenu ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	width: 150px;
 }
 
-.sub-item, .header-menu ul li{
+.sub-item, .header-menu, .header-submenu ul li{
     position: relative;
     padding-left: 10px;
     width: 100%;
@@ -247,14 +247,14 @@ img, img:hover {
     text-decoration: none;
 }
 
-.sub-item, .header-menu li ul {
+.sub-item, .header-menu, .header-submenu li ul {
 	position: absolute;
 	left: 149px;
 	top: 0;
 	display: none;
 }
 
-.sub-item, .header-menu ul li a {
+.sub-item, .header-menu, .header-submenu ul li a {
    display: block;
    text-decoration: none;
    color: #E2144A;
@@ -263,7 +263,7 @@ img, img:hover {
    border: 1px solid #ccc;
 }
 
-.sub-item, .header-menu li:hover ul { display: block; }
+.sub-item, .header-menu, .header-submenu li:hover ul { display: block; }
 
 // blog grid
 .blog-grid-container {
