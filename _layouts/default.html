@@ -62,7 +62,7 @@
         <li><a href="{{ site.baseurl }}/about">Sobre nós</a></li>
         <li><a href="{{ site.baseurl }}/authors">Membros <span class="badge badge-primary"></span></a></li>
 	<li><a href="{{ site.baseurl }}/tags#Notícias">Notícias <span class="badge badge-primary"></span></a></li>
-        {% if menu.type == 'categories' %}
+	        {% if menu.type == 'categories' %}
           <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
             <ul class="header-submenu">
               {% for item in (0..site.categories.size) %}{% unless forloop.last %}
@@ -70,8 +70,6 @@
                   <li class="sub-item"><a href="{{site.url}}/categories/#{{this_word}}">{{this_word}}</a></li>
               {% endunless %}{% endfor %}
             </ul>
-          </li>
-	    {% end if %}
         <li><a href="{{ site.baseurl }}/contact">Contato</a></li>       
     </ul>   
 </nav>
