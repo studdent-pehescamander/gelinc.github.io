@@ -1,3 +1,3 @@
-# Acesso nosso blog!
+# Acesse o nosso blog!
 
 https://gelinc.github.io/
