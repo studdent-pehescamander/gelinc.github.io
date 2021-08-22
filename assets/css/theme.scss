@@ -743,3 +743,21 @@ body.active-side {
 	z-index: 10000000000;
 	top: auto;
 }
+
+.sub-item {
+	position: relative;
+	padding-left: 10px;
+	width: 100%;
+	height: 50px;
+	text-decoration: none;
+}
+
+.sub-item a{
+	vertical-align: middle;
+	display: table-cell;
+	height: 50px;
+}
+
+.sub-item:hover {
+	color: black;
+}
