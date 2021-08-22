@@ -70,22 +70,6 @@
                   <li class="sub-item"><a href="{{site.url}}/categories#{{this_word}}">{{this_word}}</a></li>
               {% endunless %}{% endfor %}
             </ul>
-          </li>
-        {% elsif menu.submenu %}
-          <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</a>
-            <ul class="header-submenu">
-              {% for sub in menu.submenu %}
-                <li class="sub-item"><a href="{{site.url}}{{sub.url}}">{{sub.title}}</a></li>
-              {% endfor %}
-            </ul>
-          </li>
-        {% else %}
-            {% if menu.url contains 'http://' or menu.url contains 'https://' %}
-                <li class="header-item {{class}}"><a href="{{menu.url}}" target="_blank">{{ menu.title }}</a></li>
-            {% else %}
-                <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</a></li>
-            {% endif %}
-        {% endif %}
         <li><a href="{{ site.baseurl }}/contact">Contato</a></li>       
     </ul>   
 </nav>
