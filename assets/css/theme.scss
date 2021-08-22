@@ -226,40 +226,6 @@ img, img:hover {
     }
 }
 
-.sub-item, .header-menu, .header-submenu ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	width: 150px;
-}
-
-.sub-item, .header-menu, .header-submenu ul li{
-    position: relative;
-    padding-left: 10px;
-    border-bottom: 1px solid #8E9AA7;
-    border-left: 1px solid;
-    height: 50px;
-    text-decoration: none;
-}
-
-.sub-item, .header-menu, .header-submenu li ul {
-	position: absolute;
-	left: 149px;
-	top: 0;
-	display: none;
-}
-
-.sub-item, .header-menu, .header-submenu ul li a {
-   display: block;
-   text-decoration: none;
-   color: #8E9AA7;
-   background: #fff;
-   padding: 5px;
-   border: 1px solid #ccc;
-}
-
-.sub-item, .header-menu, .header-submenu li:hover ul { display: block; }
-
 // blog grid
 .blog-grid-container {
     width: auto;
