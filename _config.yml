@@ -10,9 +10,9 @@ disqus: 'gelinc'
 mailchimp-list: 'https://mailchi.mp/d8af755174cf/newsletter'
 include: ["_pages"]
 permalink: /:title/
-email: 'gelincunb@gmail.com'
+email: gelincunb@gmail.com
 # Instagram nick for use in Instagram cards and follow button.
-instagram: '' # if no instagram in this config, the instagram follow button will be removed
+instagram: # if no instagram in this config, the instagram follow button will be removed
 
 # Authors
 authors:
