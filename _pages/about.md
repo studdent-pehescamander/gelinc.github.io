@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sobre nós 
-permalink: /about
+permalink: /sobre
 comments: false
 image: assets/images/screenshot.jpg
 imageshadow: true
