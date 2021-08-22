@@ -63,12 +63,6 @@
         <li><a href="{{ site.baseurl }}/about">Sobre nós</a></li>
         <li><a href="{{ site.baseurl }}/authors">Membros </a></li>
 	<li><a href="{{ site.baseurl }}/tags#Notícias">Notícias </a></li>
-      {% for menu in site.menu reversed %}
-        {% assign class = nil %}
-        {% if ((page.url contains menu.url and menu.url != '/') or (page.url == '/index.html' and menu.url == '/')) %}
-          {% assign class = 'active' %}
-        {% endif %}
-
         {% if menu.type == 'categories' %}
           <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</a>
             <ul class="header-submenu">
