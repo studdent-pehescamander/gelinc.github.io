@@ -746,21 +746,12 @@ body.active-side {
 }
 
 .header-item.active, .header-item:hover {
-	border-top-color: #f45145;
-}
-
-.header-item {
-    height: 100%;
-    display: none;
+	border-bottom-color: #8E9AA7;
 }
 
 .header-item, .header-item-title {
     float: right;
-    padding-left: 20px;
-    padding-right: 20px;
     border-top-color: transparent;
-    border-top-style: solid;
-    border-top-width: 5px;
     box-sizing: border-box;
 }
 
@@ -775,7 +766,7 @@ body.active-side {
     position: relative;
     padding-left: 10px;
     width: 100%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #8E9AA7;
     border-left: 1px solid;
     height: 50px;
     text-decoration: none;
