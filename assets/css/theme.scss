@@ -755,12 +755,11 @@ body.active-side {
 	color: #fff;
 	background-color: #E1306C;
 	border-color: #E1306C;
-	position: fixed;
+	position: absolute;
 	margin-top: 70px;
 	margin-right: 10px;
 	margin-left: 80%;
 	top: 0;
 	right: 0;
 	z-index: 10000000000;
-	top: auto;
 }
