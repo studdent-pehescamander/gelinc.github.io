@@ -636,6 +636,7 @@ body.active-side {
     padding:30px;
     border-top:1px solid $gray-200;
     font-size:15px;
+	
     background:#fff;
 }
 
@@ -726,10 +727,7 @@ body.active-side {
         display:inline-block;
         margin: 10px 15px !important;
     }
-    
-    #menu ul {
-        padding: 80px 30px 80px 30px;
-    }
+
     .related-posts {
         h2 {
             font-size: 1.4rem;
