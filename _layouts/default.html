@@ -6,12 +6,6 @@
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	
-<!-- Instagram Card -->
-{% if site.instagram %}
-  <a target="_blank" href="https://instagram.com/{{site.instagram}}" class="btn btn-info button-twitter" data-show-count="false" data-size="large"><i class="fab fa-instagram"></i> <span> | Siga @{{site.instagram}}</span></a>
-{% endif %}
-<!-- End Instagram Card -->
 
 <title>{{ page.title }} | {{site.name}}</title>
 
@@ -100,6 +94,12 @@
         </p>
     {% endif %}
 
+	<!-- Instagram Card -->
+	{% if site.instagram %}
+  		<a target="_blank" href="https://instagram.com/{{site.instagram}}" class="btn btn-info button-twitter" data-show-count="false" data-size="large"><i class="fab fa-instagram"></i> <span> | Siga @{{site.instagram}}</span></a>
+	{% endif %}
+	<!-- End Instagram Card -->
+	
     <!-- Content
     ================================================== -->
     <div class="main-content">
