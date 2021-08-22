@@ -12,7 +12,7 @@ include: ["_pages"]
 permalink: /:title/
 email: gelincunb@gmail.com
 # Instagram nick for use in Instagram cards and follow button.
-instagram: pedrohenrique.png # if no twitter in this config, the twitter follow button will be removed
+instagram: instagram.com/pedrohenrique.png # if no twitter in this config, the twitter follow button will be removed
 
 # Authors
 authors:
