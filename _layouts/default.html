@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	
+<!-- Instagram Card -->
+{% if site.owner.instagram %}
+<a href="https://instagram.com/{{site.owner.instagram}}">
+class="btn btn-info button-instagrama" data-show-count="false" data-size="large"><i class="fa fa-instagram"></i> <span> | Siga @{{site.owner.instagram}}</span></a>
+{% endif %}
+<!-- End Instagram Card -->
 
 <title>{{ page.title }} | {{site.name}}</title>
 
