@@ -64,14 +64,20 @@
         <li><a href="{{ site.baseurl }}/authors">Membros </a></li>
 	<li><a href="{{ site.baseurl }}/tags#Notícias">Notícias </a></li>
 	    {% if menu.type == 'categories' %}
-          <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
+          <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</a>
             <ul class="header-submenu">
               {% for item in (0..site.categories.size) %}{% unless forloop.last %}
                 {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
-                  <li class="sub-item"><a href="{{site.url}}/categories/#{{this_word}}">{{this_word}}</a></li>
+                  <li class="sub-item"><a href="{{site.url}}/categories#{{this_word}}">{{this_word}}</a></li>
               {% endunless %}{% endfor %}
             </ul>
           </li>
+	    {% else %}
+	    {% if menu.url contains 'http://' or menu.url contains 'https://' %}
+                <li class="header-item {{class}}"><a href="{{menu.url}}" target="_blank">{{ menu.title }}</a></li>
+            {% else %}
+                <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</a></li>
+            {% endif %}
         <li><a href="{{ site.baseurl }}/contact">Contato</a></li>       
     </ul>   
 </nav>
