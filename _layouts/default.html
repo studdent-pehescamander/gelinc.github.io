@@ -8,14 +8,9 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	
 <!-- Instagram Card -->
-{% if instagram %}
-<a href="https://instagram.com/{{instagram}}">
-   <span style="font-size: 1.5rem;">
-       <span style="color: indianred;">
-          <i class="fab fa-instagram"></i>
-       </span>
-   </span>
-</a>
+{% if site.instagram %}
+  <a href="https://instagram.com/{{site.instagram}}" class="btn btn-info button-instagram" data-show-count="false" data-size="large"><i class="fa fa-instagram"></i> <span> | Siga @{{site.instagram}}</span></a>
+{% endif %}
 <!-- End Instagram Card -->
 
 <title>{{ page.title }} | {{site.name}}</title>
