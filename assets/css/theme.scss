@@ -188,6 +188,7 @@ img, img:hover {
     }
 }
 #menu {
+	padding: 80px 30px 80px 100px;
     position: fixed;
     top: 0;
     left: 0;
@@ -202,9 +203,6 @@ img, img:hover {
         transform: translate(0%, 0);
     }
 
-	.header {
-		padding: 80px 30px 80px 100px;
-	}
 	.sub-item ul {
 		padding: 0px;
 	}
