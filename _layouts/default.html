@@ -3,6 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+{% if site.owner.instragram or site.instagram %}<!-- Instragram Cards -->
+{% if page.image.feature %}<meta name="instagram:card" content="summary_large_image">
+{% else %}<meta name="instagram:card" content="summary">{% endif %}
+<meta name="instagram:site" content="@{% if site.instagram %}{{ site.instagram }}{% else %}{{ site.owner.instagram }}{% endif %}">
+<meta name="instagram:creator" content="@{% if site.owner.instagram %}{{ site.owner.instagram }}{% else %}{{ site.instagram }}{% endif %}">{% endif %}
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
