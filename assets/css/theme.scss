@@ -202,13 +202,14 @@ img, img:hover {
         transform: translate(0%, 0);
     }
 
-
+	.header {
+		padding: 80px 30px 80px 100px;
+	}
 	.sub-item ul {
 		padding: 0px;
 	}
 	
     ul {
-        padding: 80px 30px 80px 100px;
         h3 {
             margin-bottom:30px;
         }
@@ -238,7 +239,6 @@ ul li a {
 }
 
 li ul {
-position: absolute;
 left: 149px;
 top: 0;
 display: none;
