@@ -242,6 +242,8 @@ top: 0;
 display: none;
 }
 
+li:hover ul { display: block; }
+
 // blog grid
 .blog-grid-container {
     width: auto;
