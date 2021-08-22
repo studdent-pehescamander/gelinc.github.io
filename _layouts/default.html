@@ -63,11 +63,11 @@
         <li><a href="{{ site.baseurl }}/about">Sobre nós</a></li>
         <li><a href="{{ site.baseurl }}/authors">Membros </a></li>
 	<li><a href="{{ site.baseurl }}/tags#Notícias">Notícias </a></li>
-          <li class="header-item {{class}}"><a href="{{site.url}}/categories">Categorias</a>
+        <li class="header-item"><a href="{{ site.baseurl }}/categories">Categorias</a>
             <ul class="header-submenu">
               {% for item in (0..site.categories.size) %}{% unless forloop.last %}
                 {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
-                  <li class="sub-item"><a href="{{site.url}}/categories#{{this_word}}">{{this_word}}</a></li>
+                  <li class="sub-item"><a href="{{ site.baseurl }}/categories#{{this_word}}">{{this_word}}</a></li>
               {% endunless %}{% endfor %}
             </ul>
         <li><a href="{{ site.baseurl }}/contact">Contato</a></li>       
