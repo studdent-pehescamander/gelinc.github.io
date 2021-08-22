@@ -11,6 +11,7 @@ mailchimp-list: 'https://mailchi.mp/d8af755174cf/newsletter'
 include: ["_pages"]
 permalink: /:title/
 email: gelincunb@gmail.com
+instagram: ""
 
 # Authors
 authors:
