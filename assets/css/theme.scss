@@ -731,4 +731,12 @@ body.active-side {
     }
 }
 
-.menu2 li:hover ul, .menu li.over ul{display:block;}
+.btn btn-info button-instagram {
+color: #fff;
+    position: fixed;
+    margin-top: 15px;
+    margin-right: 10px;
+    top: 0;
+    right: 0;
+    z-index: 10000000000;
+}
