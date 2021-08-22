@@ -245,7 +245,7 @@ top: 0;
 display: none;
 }
 
-li:hover ul { display: block; }
+li:hover ul { display: block; color: #40FFDC;}
 
 // blog grid
 .blog-grid-container {
@@ -755,7 +755,7 @@ body.active-side {
 	color: #fff;
 	background-color: #E1306C;
 	border-color: #E1306C;
-	position: absolute;
+	position: fixed;
 	margin-top: 70px;
 	margin-right: 10px;
 	margin-left: 80%;
