@@ -3,7 +3,7 @@ layout: page
 title: Sobre nós 
 permalink: /sobre
 comments: false
-image: assets/images/screenshot.jpg
+image: assets/images/gelinc_simples.jpg
 imageshadow: true
 ---
 
