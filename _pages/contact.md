@@ -3,7 +3,6 @@ layout: page
 title: Contato
 permalink: /contato
 comments: false
-instagram-card: false
 ---
 
 <form action="https://formspree.io/f/xwkawaqp" method="POST">    
