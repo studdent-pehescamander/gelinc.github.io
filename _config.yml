@@ -1,7 +1,7 @@
 # Site
 name: "GELinC-UnB"
 title: "GELinC-UnB"
-description: "Grupo de Estudos em Linguística Computacional | Blog do grupo de estudos de linguística computacional da UnB<"
+description: "Grupo de Estudos em Linguística Computacional | Blog do grupo de estudos de linguística computacional da UnB (Universidade de Brasília"
 logo: 'assets/images/GELinC_simples.png'
 favicon: 'assets/images/GELinC_simples.png'
 baseurl: 'https://gelinc.github.io'
