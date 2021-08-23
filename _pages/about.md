@@ -3,7 +3,7 @@ layout: page
 title: Sobre nós 
 permalink: /sobre
 comments: false
-image: assets/images/GELinC_simples.png
+image: assets/images/ICC.jpg
 imageshadow: true
 ---
 
