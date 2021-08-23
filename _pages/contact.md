@@ -6,7 +6,7 @@ comments: false
 ---
 
 <form action="https://formspree.io/f/xwkawaqp" method="POST">    
-<p class="mb-4">Por favor, envie sua mensagem para {{site.name}}. Nós responderemos o mais breve possível!</p>
+<p class="mb-4">Por favor, envie sua mensagem para o GELinC. Nós responderemos o mais breve possível!</p>
 <div class="form-group row">
 <div class="col-md-6">
 <input class="form-control" type="text" name="name" placeholder="Nome*" required>
