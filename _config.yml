@@ -11,7 +11,7 @@ mailchimp-list: 'https://gmail.us5.list-manage.com/subscribe/post?u=2219e9e3f830
 include: ["_pages"]
 permalink: /:title/
 email:
-instagram:
+instagram: exemplo
 
 # Authors
 authors:
