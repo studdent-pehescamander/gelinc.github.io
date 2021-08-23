@@ -2,8 +2,8 @@
 name: "GELinC"
 title: "GELinC"
 description: "Grupo de Estudos em Linguística Computacional"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+logo: 'assets/images/GELinC_simples.png'
+favicon: 'assets/images/GELinC_simples.png'
 baseurl: 'https://gelinc.github.io'
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'gelinc'
