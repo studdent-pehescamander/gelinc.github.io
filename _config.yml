@@ -10,7 +10,7 @@ disqus: 'gelinc'
 mailchimp-list: 'https://gmail.us5.list-manage.com/subscribe/post?u=2219e9e3f830fe06a3572e5ab&amp;id=84a8514219'
 include: ["_pages"]
 permalink: /:title/
-email: gelincunb@gmail.com
+email:
 instagram:
 
 # Authors
