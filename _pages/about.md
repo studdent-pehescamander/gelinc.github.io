@@ -3,6 +3,7 @@ layout: page
 title: Sobre nós 
 permalink: /sobre
 comments: false
+instagram-card: false
 image: assets/images/screenshot.jpg
 imageshadow: true
 ---
