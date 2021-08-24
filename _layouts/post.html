@@ -61,17 +61,17 @@ instagram-card: false
 <!-- Related Post -->
 {% include related-posts.html %}
 
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+<!-- LD-JSON 
 https://search.google.com/structured-data/testing-tool/u/0/
 ================================================== -->
-{% if page.rating %}
     <script type="application/ld+json">
     {
     "@context": "http://schema.org/",
     "@type": "Review",
     "itemReviewed": {
-    "@type": "Thing",
+    "@type": "WebPage",
     "name": "{{ page.title }}"
+    "@id": "{{site.baseurl}}/{{ post.url }}"
     },
     "author": {
     "@type": "Person",
@@ -80,9 +80,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
     "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
     "reviewRating": {
     "@type": "Rating",
-    "ratingValue": "{{ page.rating }}",
     "bestRating": "5"
     }
     }
     </script>
-{% endif %}
