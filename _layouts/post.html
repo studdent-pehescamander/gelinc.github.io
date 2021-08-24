@@ -69,9 +69,8 @@ https://search.google.com/structured-data/testing-tool/u/0/
     "@context": "http://schema.org/",
     "@type": "Review",
     "itemReviewed": {
-    "@type": "WebPage",
+    "@type": "Thing",
     "name": "{{ page.title }}"
-    "@id": "{{site.baseurl}}/{{ post.url }}"
     },
     "author": {
     "@type": "Person",
@@ -80,6 +79,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
     "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
     "reviewRating": {
     "@type": "Rating",
+    "ratingValue": "{{ page.rating }}",
     "bestRating": "5"
     }
     }
