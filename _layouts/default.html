@@ -8,7 +8,24 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
 <title>{{ page.title }} | {{site.name}}</title>
+	
+<!--  JSON-LD Structured Data. -->
 
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "{{ site.name }}",
+    "description": "{{ site.description }}",
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.name }}"
+    }
+}
+</script>
+
+<!--  JSON-LD Structured Data. -->	
+	
 {% seo %}
     
 <link href="{{ site.baseurl }}/assets/css/prism.css" rel="stylesheet">
