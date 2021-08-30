@@ -11,18 +11,34 @@
 	
 <!--  JSON-LD Structured Data. -->
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "WebPage",
-    "name": "{{ site.name }}",
-    "description": "{{ site.description }}",
-    "publisher": {
-        "@type": "Organization",
-        "name": "{{ site.name }}"
-    }
-}
-</script>
+<script type="application/ld+json" class="yoast-schema-graph">
+    {
+        "@context":"https://schema.org",
+        "@graph":[{"@type":"Organization",
+        "@id":"{{ site.baseurl }}",
+        "name":"{{ site.name }}",
+        "url":"{{ site.baseurl }}","sameAs":[],
+        "logo":{"@type":"ImageObject",
+        "@id":"{{ site.baseurl }}/assets/images/logo.png",
+        "inLanguage":"pt-BR",
+        "url":"{{ site.baseurl }}/assets/images/logo.png",
+        "contentUrl":"{{ site.baseurl }}/assets/images/logo.png",
+        "image":{"@id":"{{ site.baseurl }}/assets/images/logo.png"}},
+        {"@type":"WebSite","@id":"{{ site.baseurl }}",
+        "url":"{{ site.baseurl }}","name":"{{ site.name }}",
+        "description":"{{ site.description }}",
+        "publisher":{"@id":"{{ site.baseurl }}"},
+        {"@type":"CollectionPage","@id":"{{ site.baseurl }}",
+        "url":"{{ site.baseurl }}","name":"{{ site.name }}",
+        "isPartOf":{"@id":"{{ site.baseurl }}"},
+        "about":{"@id":"{{ site.baseurl }}"},
+        "description":"{{ site.description }}",
+        "breadcrumb":{"@id":"{{ site.baseurl }}"},
+        "inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction",
+        "target":["{{ site.baseurl }}"]}]},
+        {"@type":"BreadcrumbList","@id":"{{ site.baseurl }}",
+        "itemListElement":[{"@type":"ListItem","position":1,"name":""}]}]}
+    </script> 
 
 <!--  JSON-LD Structured Data. -->	
 	
